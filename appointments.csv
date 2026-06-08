@@ -1,0 +1,5 @@
+AppointmentID,PatientName,Date,DoctorID,Reason
+1,Ali Ahmad,2026-06-15,2,General Checkup
+2,Siti Rahman,2026-06-16,3,Skin Allergy
+3,Farid Ismail,2026-06-17,1,Follow-up Visit
+4,Nur Aina,2026-06-18,4,Heart Screening
