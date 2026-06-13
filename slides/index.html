@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Appointment System | BIK10903</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="presentation" id="presentation">
+    <div class="ambient ambient-blue"></div>
+    <div class="ambient ambient-pink"></div>
+    <div class="frame-glow"></div>
+
+    <aside class="side-progress" aria-hidden="true">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </aside>
+
+    <!-- Slide 1 -->
+    <section class="slide active title-slide" data-slide="1">
+      <header class="slide-top">
+        <span class="eyebrow">UNIVERSITI TUN HUSSEIN ONN MALAYSIA</span>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="course-pill">BIK10903 · DATA STRUCTURE</div>
+          <h1>Medical Appointment<br />System</h1>
+          <p class="lead">A C-based scheduling system for Pusat Kesihatan Universiti UTHM that manages patient appointments and doctor records using practical data structure concepts.</p>
+          <div class="tag-row">
+            <span>Arrays</span>
+            <span>File I/O</span>
+            <span>Binary Search</span>
+            <span>CSV Storage</span>
+          </div>
+          <div class="lecturer-card glass-card">
+            <span>Lecturer</span>
+            <strong>Dr. Nurezayana Binti Zainal</strong>
+          </div>
+        </div>
+        <div class="system-orb glass-card">
+          <div class="pulse-ring"></div>
+          <div class="core-chip">MAS</div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span>
+          <p>Medical Appointment System</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide" data-slide="2">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">GROUP MEMBERS</span>
+          <h2>Group Members</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="member-grid six-members">
+        <article class="member-card glass-card">
+          <img src="assets/abdulmajeed.jpg" alt="Abdulmajeed Abdullah Ahmed Ba Hadi" />
+          <div class="member-info">
+            <h3>ABDULMAJEED ABDULLAH AHMED BA HADI</h3>
+            <p>AI250042</p>
+          </div>
+        </article>
+        <article class="member-card glass-card">
+          <img src="assets/abderehman.jpg" alt="Abderehman Idris Jemal" />
+          <div class="member-info">
+            <h3>ABDEREHMAN IDRIS Jemal</h3>
+            <p>AI250032</p>
+          </div>
+        </article>
+        <article class="member-card glass-card">
+          <img src="assets/ahmed-nashwan.jpg" alt="Ahmed Nashwan Ahmed Al-Maswary" />
+          <div class="member-info">
+            <h3>AHMED NASHWAN AHMED AL-MASWARY</h3>
+            <p>AI250001</p>
+          </div>
+        </article>
+        <article class="member-card glass-card">
+          <img src="assets/anas.jpg" alt="Anas Awsan Abdulrazzaq Musaed" />
+          <div class="member-info">
+            <h3>ANAS AWSAN ABDULRAZZAQ MUSAED</h3>
+            <p>AI250036</p>
+          </div>
+        </article>
+        <article class="member-card glass-card">
+          <img src="assets/ahmed-hail.jpg" alt="Ahmed Hail Sagheer Ahmed Al-Wesabi" />
+          <div class="member-info">
+            <h3>AHMED HAIL SAGHEER AHMED AL-WESABI</h3>
+            <p>AI250034</p>
+          </div>
+        </article>
+        <article class="member-card glass-card">
+          <img src="assets/md-jowel.jpg" alt="MD Jowel" />
+          <div class="member-info">
+            <h3>MD JOWEL</h3>
+            <p>AI250004</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide" data-slide="3">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">PROJECT INTRODUCTION</span>
+          <h2>Why This System Was Built</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="two-col">
+        <div class="glass-card big-text-card">
+          <h3>Purpose</h3>
+          <p>The Medical Appointment System was developed to manage patient appointments and doctor records efficiently for Pusat Kesihatan Universiti UTHM.</p>
+          <p>It provides a menu-driven interface where users can insert, update, delete, search, list, and save appointment records.</p>
+        </div>
+        <div class="placeholder-card glass-card">
+          <img src="assets/system_overview.jpg" alt="System Overview Diagram" style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--radius);" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide" data-slide="4">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">PROJECT TARGETS</span>
+          <h2>Objectives</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="objective-grid">
+        <div class="objective glass-card"><b>01</b><h3>CRUD Operations</h3><p>Insert, update, delete, list, and search appointment records.</p></div>
+        <div class="objective glass-card"><b>02</b><h3>Data Structures</h3><p>Apply arrays, searching, and sorting techniques.</p></div>
+        <div class="objective glass-card"><b>03</b><h3>User-Friendly Interface</h3><p>Provide a clear menu-driven interface for easy interaction.</p></div>
+        <div class="objective glass-card"><b>04</b><h3>CSV Persistence</h3><p>Save records into CSV files and retrieve them across sessions.</p></div>
+        <div class="objective glass-card"><b>05</b><h3>Validation</h3><p>Reduce invalid inputs, empty fields, and common user mistakes.</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide" data-slide="5">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">PROBLEM BACKGROUND</span>
+          <h2>From Manual Scheduling to Automation</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="problem-flow">
+        <div class="glass-card issue-card"><span>Manual Records</span><p>Appointments may be written manually or stored in basic spreadsheets.</p></div>
+        <div class="arrow">→</div>
+        <div class="glass-card issue-card"><span>Common Issues</span><p>Duplication, missed appointments, slow retrieval, and scheduling conflicts.</p></div>
+        <div class="arrow">→</div>
+        <div class="glass-card solution-card"><span>Our Solution</span><p>Automated CRUD operations, validation, searching, sorting, and CSV storage.</p></div>
+      </div>
+      <div class="mini-panels">
+        <span>Fast retrieval by ID</span><span>Alphabetical patient listing</span><span>Persistent appointment records</span><span>Clear doctor assignment</span>
+      </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide" data-slide="6">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">METHODOLOGY</span>
+          <h2>Data Structures Used</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="ds-layout">
+        <div class="ds-diagram glass-card">
+          <!-- Data structure visual representation -->
+          <div class="array-box">
+            <h3>Doctors Array</h3>
+            <div class="array-cells"><span>D1</span><span>D2</span><span>D3</span><span>D4</span></div>
+            <small>Fixed small dataset (MAX 20)</small>
+          </div>
+          <div class="connector"></div>
+          <div class="array-box">
+            <h3>Appointments Array</h3>
+            <div class="array-cells"><span>A1</span><span>A2</span><span>A3</span><span>A4</span></div>
+            <small>Stored sequentially for Binary Search (MAX 100)</small>
+          </div>
+        </div>
+        <div class="method-cards">
+          <div class="method glass-card"><strong>Binary Search</strong><p>Used to retrieve appointments by ID efficiently.</p><code>O(log n)</code></div>
+          <div class="method glass-card"><strong>Linear Search</strong><p>Used for doctor lookup because the doctor list is small.</p><code>O(n)</code></div>
+          <div class="method glass-card"><strong>qsort</strong><p>Sorts appointment listings alphabetically by patient name.</p><code>O(n log n)</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7 -->
+    <section class="slide" data-slide="7">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">SYSTEM FUNCTIONS</span>
+          <h2>Core Functions Implemented</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="function-grid">
+        <div class="function-card glass-card"><code>insertAppointment()</code><p>Adds a new appointment with validation.</p></div>
+        <div class="function-card glass-card"><code>updateAppointment()</code><p>Updates patient name, doctor ID, and reason.</p></div>
+        <div class="function-card glass-card"><code>deleteAppointment()</code><p>Removes an appointment by ID using array shifting.</p></div>
+        <div class="function-card glass-card"><code>listAppointments()</code><p>Displays appointments sorted alphabetically.</p></div>
+        <div class="function-card glass-card"><code>listDoctors()</code><p>Shows doctor ID, name, and specialization.</p></div>
+        <div class="function-card glass-card"><code>saveAppointments()</code><p>Saves all appointment records to CSV.</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 8 -->
+    <section class="slide" data-slide="8">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">MENU OPTIONS</span>
+          <h2>How Users Interact With the System</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="menu-layout">
+        <div class="terminal glass-card">
+          <!-- INSERT SCREENSHOT HERE: Replace this terminal with your real Menu Screenshot if you want. Example: <img src="assets/menu-screenshot.png" alt="Menu Screenshot"> -->
+          <div class="terminal-bar"><span></span><span></span><span></span></div>
+<pre>MEDICAL APPOINTMENT SYSTEM
+
+1. List Appointments
+2. Insert Appointment
+3. Update Appointment
+4. Delete Appointment
+5. List Doctors
+6. Exit and Save to CSV
+
+Enter your choice: _</pre>
+        </div>
+        <div class="menu-points">
+          <div class="glass-card"><b>01</b><p>List appointments alphabetically by patient name.</p></div>
+          <div class="glass-card"><b>02</b><p>Insert and validate patient name, doctor ID, and reason.</p></div>
+          <div class="glass-card"><b>03</b><p>Update or delete existing records by appointment ID.</p></div>
+          <div class="glass-card"><b>04</b><p>Exit safely and save all data to appointments.csv.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 9 -->
+    <section class="slide" data-slide="9">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">PROJECT RESULTS</span>
+          <h2>Evidence & Output Screenshots</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="screenshot-grid split-layout">
+        <div class="screenshot-box glass-card">
+          <img src="assets/doctor_list.png" alt="Doctor List Screenshot" />
+          <span>01</span><h3>Doctor List</h3><p>Listing available doctors.</p>
+        </div>
+        <div class="screenshot-box glass-card">
+          <img src="assets/appointment_list.png" alt="Appointment List Screenshot" />
+          <span>02</span><h3>Appointment List</h3><p>Sorted output scheduled.</p>
+        </div>
+        <div class="screenshot-box glass-card">
+          <img src="assets/csv_flise_ss.png" alt="CSV File Screenshot" />
+          <span>03</span><h3>CSV Storage</h3><p>Persistent record storage in appointments.csv.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 10 -->
+    <section class="slide" data-slide="10">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">FUTURE WORK</span>
+          <h2>Future Improvements</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="future-grid">
+        <div class="future-card glass-card"><span>GUI</span><h3>Graphical Interface</h3><p>Create a more visual and easier interface for staff.</p></div>
+        <div class="future-card glass-card"><span>DB</span><h3>Database Integration</h3><p>Improve scalability and enable multi-user access.</p></div>
+        <div class="future-card glass-card"><span>Search+</span><h3>Advanced Search</h3><p>Search by patient name or doctor specialization.</p></div>
+        <div class="future-card glass-card"><span>Stats</span><h3>Reports</h3><p>Generate appointment statistics and busiest day reports.</p></div>
+      </div>
+    </section>
+
+    <!-- Slide 11 -->
+    <section class="slide" data-slide="11">
+      <header class="slide-top">
+        <div>
+          <span class="eyebrow">CONCLUSION</span>
+          <h2>What We Achieved</h2>
+        </div>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="conclusion-layout">
+        <div class="glass-card conclusion-main">
+          <h3>Project Summary</h3>
+          <p>The Medical Appointment System successfully demonstrates the practical use of data structures in a real scheduling problem.</p>
+          <p>The system supports CRUD operations, doctor listing, appointment searching, sorting, validation, and CSV persistence.</p>
+        </div>
+        <div class="learned-grid">
+          <div class="glass-card"><b>Validation</b><p>Preventing empty and invalid inputs.</p></div>
+          <div class="glass-card"><b>Searching</b><p>Using binary search for faster retrieval.</p></div>
+          <div class="glass-card"><b>Sorting</b><p>Improving readability using alphabetical order.</p></div>
+          <div class="glass-card"><b>Teamwork</b><p>Combining programming, testing, and documentation.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 12 -->
+    <section class="slide thank-slide" data-slide="12">
+      <header class="slide-top">
+        <span class="eyebrow">BIK10903 DATA STRUCTURE</span>
+        <img class="uthm-logo" src="assets/uthm-logo.png" alt="UTHM Logo" />
+      </header>
+      <div class="thank-content">
+        <span class="mini-title">MEDICAL APPOINTMENT SYSTEM</span>
+        <h2>Thank You</h2>
+        <p>Special thanks to</p>
+        <h3>Dr. Nurezayana Binti Zainal</h3>
+        <div class="name-chips">
+          <span>Abdulmajeed</span><span>Abderehman</span><span>Ahmed Nashwan</span><span>Anas</span><span>Ahmed Hail</span><span>MD Jowel</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="deck-nav">
+      <button id="prevBtn" aria-label="Previous slide">← Previous</button>
+      <span id="slideCounter">01 / 12</span>
+      <button id="nextBtn" aria-label="Next slide">Next →</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
